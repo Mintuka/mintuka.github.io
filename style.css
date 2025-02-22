@@ -32,6 +32,7 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
+    background: #f7f8fa;
 }
 .max-width{
     max-width: 1300px;
@@ -74,9 +75,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #c0392b;
     padding: 0 5px;
-    background: #fff;
+    background: #f7f8fa;
     transform: translateX(-50%);
 }
 
@@ -91,7 +92,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: #c0392b;
 }
 .navbar .max-width{
     display: flex;
@@ -105,7 +106,7 @@ section .title::after{
     cursor: pointer;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: #c0392b;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -124,7 +125,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #c0392b;
     cursor: pointer;
 }
 .navbar.sticky .menu li a:hover{
@@ -143,7 +144,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #c0392b;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -194,12 +195,22 @@ section .title::after{
     font-weight: 600;
     margin-left: -3px;
 }
+.home .home-content .name-container {
+    display: flex;
+    align-items: center;
+    .name {
+        margin: 0px 10px;
+    }
+    .slash, i {
+        color: #c0392b;
+    }
+}
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: #c0392b;
     font-weight: 500;
 }
 .classbox
@@ -278,28 +289,31 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #c0392b;
 }
 .about .about-content .right p{
     text-align: justify;
+    color: #373e4d;
+    font-size: 16;
+    font-family: cursive;
 }
 .about .about-content .right a{
      display: inline-block;
     /* background: crimson; */
-    color: crimson;
+    color: #c0392b;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #c0392b;
     transition: all 0.3s ease-in-out; 
     
     
 }
 .about .about-content .right a:hover{
    color: white;
-    background: crimson;
+    background: #c0392b;
 
 } 
 
@@ -374,8 +388,8 @@ section .title::after{
 .container .box:hover:after
 {
     transform: skewX(0deg);
-    left: 20px;
-    width: calc(100% - 90px);
+    left: 0px;
+    width: calc(100% - 50px);
 }
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
@@ -438,6 +452,8 @@ section .title::after{
     margin-bottom: 10px;
     line-height: 1.4em;
     padding: 12px;
+    font-size: 19;
+    font-family: cursive;
 }
 .container .box .content a
 {
@@ -481,10 +497,10 @@ section .title::after{
 }
 .container .box:hover #first::before 
 {
-    top: -50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;  
+    top: -60px;
+    left: 20px;
+    width: 80px;
+    height: 80px;  
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/2334/PNG/512/pen_tool_anchor_point_design_icon_142354.png") no-repeat;
     background-size: 100px;
@@ -493,10 +509,10 @@ section .title::after{
 }
 .container .box:hover #second::before 
 {
-    top: -50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;  
+    top: -60px;
+    left: 20px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/1145/PNG/512/codeoutlinedprogrammingsigns_81143.png") no-repeat;
     background-size: 100px;
@@ -505,10 +521,10 @@ section .title::after{
 }
 .container .box:hover #third::before 
 {
-    top: -50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;  
+    top: -60px;
+    left: 20px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/2066/PNG/512/search_icon_125165.png") no-repeat;
     background-size: 100px;
@@ -517,10 +533,10 @@ section .title::after{
 }
 .container .box:hover #fourth::before 
 {
-    top: -50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;  
+    top: -60px;
+    left: 20px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/935/PNG/512/video-camera-outline_icon-icons.com_73112.png") no-repeat;
     background-size: 100px;
@@ -529,10 +545,10 @@ section .title::after{
 }
 .container .box:hover #fifth::before 
 {
-    top: -50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;  
+    top: -60px;
+    left: 20px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/620/PNG/512/bars-chart-ascending_icon-icons.com_56865.png") no-repeat;
     background-size: 100px;
@@ -541,10 +557,10 @@ section .title::after{
 }
 .container .box:hover #sixth::before 
 {
-    top: -50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;  
+    top: -60px;
+    left: 20px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/936/PNG/512/android-character-symbol_icon-icons.com_73684.png") no-repeat;
     background-size: 100px;
@@ -572,9 +588,9 @@ section .title::after{
 .container .box:hover #sixth::after
 {
     bottom: -50px;
-    right: 50px;
-    width: 100px;
-    height: 100px;  
+    right: 40px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/936/PNG/512/android-character-symbol_icon-icons.com_73684.png") no-repeat;
     background-size: 100px;
@@ -583,9 +599,9 @@ section .title::after{
 .container .box:hover #fifth::after
 {
     bottom: -50px;
-    right: 50px;
-    width: 100px;
-    height: 100px;  
+    right: 40px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/620/PNG/512/bars-chart-ascending_icon-icons.com_56865.png") no-repeat;
     background-size: 100px;
@@ -595,9 +611,9 @@ section .title::after{
 .container .box:hover #fourth::after
 {
     bottom: -50px;
-    right: 50px;
-    width: 100px;
-    height: 100px;  
+    right: 40px;
+    width: 80px;
+    height: 80px;  
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/935/PNG/512/video-camera-outline_icon-icons.com_73112.png") no-repeat;
     background-size: 100px;
@@ -606,9 +622,9 @@ section .title::after{
 .container .box:hover #third::after
 {
     bottom: -50px;
-    right: 50px;
-    width: 100px;
-    height: 100px;  
+    right: 40px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/2066/PNG/512/search_icon_125165.png") no-repeat;
     background-size: 100px;
@@ -617,9 +633,9 @@ section .title::after{
 .container .box:hover #second::after
 {
     bottom: -50px;
-    right: 50px;
-    width: 100px;
-    height: 100px;  
+    right: 40px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/1145/PNG/512/codeoutlinedprogrammingsigns_81143.png") no-repeat;
     background-size: 100px;
@@ -628,9 +644,9 @@ section .title::after{
 .container .box:hover #first::after
 {
     bottom: -50px;
-    right: 50px;
-    width: 100px;
-    height: 100px;  
+    right: 40px;
+    width: 80px;
+    height: 80px; 
     opacity: 1;
     background: url("https://cdn.icon-icons.com/icons2/2334/PNG/512/pen_tool_anchor_point_design_icon_142354.png") no-repeat;
     background-size: 100px;
@@ -667,29 +683,29 @@ section .title::after{
 .skills .skills-content .left a{
     display: inline-block;
     /* background: crimson; */
-    color: crimson;
+    color: #c0392b;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #c0392b;
     transition: 0.3s ease-in-out;
 }
 .skills .skills-content .left a:hover{
     color: white;
-    background: crimson;
+    background: #c0392b;
 }
 .skills .skills-content .left p #link
 {
     border: none;
     text-decoration: none;
-    color: crimson;
+    color: #c0392b;
 }
 
 .skills .skills-content .left p #link:hover
 {
-    color: crimson;
+    color: #c0392b;
     /* text-transform: uppercase; */
     text-decoration: underline;
     background: none;
@@ -719,7 +735,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #c0392b;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -739,7 +755,33 @@ section .title::after{
 .skills-content .right .wordpress::before{
     width: 75%;
 }
-
+.skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 12%;
+        margin: 20px;
+        .img-container {
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            img {
+                width: 100%;
+            }
+            .label {
+                margin-top: 10px;
+                font-family: cursive;
+            }
+        }
+    }
+}
 
 /* projects section styling */
 .teams .title::after{
@@ -772,7 +814,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #c0392b;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -788,7 +830,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #c0392b!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -797,23 +839,23 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #c0392b!important;
 }
 .teams .carousel .card .box .project
 {
     display: inline-block;
-    color: crimson;
+    color: #c0392b;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #c0392b;
     transition: 0.3s ease-in-out;
 }
 .teams .carousel .card .box .project:hover{
     color: white;
-    background: crimson;
+    background: #c0392b;
 }
 /* contact section styling */
 input,textarea
@@ -833,6 +875,10 @@ input,textarea
 }
 .contact .contact-content .left p{
     text-align: justify;
+    color: #373e4d;
+    font-size: 16;
+    font-style: italic;
+    font-family: cursive;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -847,13 +893,17 @@ input,textarea
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #c0392b;
+    width: 25px;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
+    font-size: 15;
+    font-style: italic;
+    font-family: cursive;
 }
 .contact .right form .fields{
     display: flex;
@@ -887,6 +937,9 @@ input,textarea
 .contact .right form .textarea textarea:focus{
     border-color: #b3b3b3;
 }
+input::placeholder, textarea::placeholder {
+    font-size: 15px;
+}
 .contact .right form .textarea textarea{
   padding-top: 10px;
   resize: none;
@@ -896,7 +949,7 @@ input,textarea
   align-items: center;
 }
 .right form .button-area button{
-  color: crimson;
+  color: #c0392b;
   display: block;
   width: 160px!important;
   height: 45px;
@@ -906,12 +959,12 @@ input,textarea
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  border: 2px solid crimson;
+  border: 2px solid #c0392b;
   transition: all 0.3s ease-in-out;
 }
 .right form .button-area button:hover{
   color: white;
-  background: crimson;
+  background: #c0392b;
 }
 /* footer section styling */
 
