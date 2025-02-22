@@ -785,7 +785,7 @@ section .title::after{
 
 /* projects section styling */
 .teams .title::after{
-    content: "Projects Done";
+    content: "What i achieved";
 }
 .teams .carousel .card{
     background: #222;
@@ -863,7 +863,7 @@ input,textarea
     caret-color: red;
 }
 .contact .title::after{
-    content: "get in touch";
+    content: "let's connect";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
