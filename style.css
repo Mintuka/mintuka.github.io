@@ -296,8 +296,8 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
     color: #373e4d;
-    font-size: 16;
-    font-family: "Brush Script MT", cursive;
+    font-size: 19px;
+    font-family: "Comic Sans MS", cursive;
 }
 .about .about-content .right a{
      display: inline-block;
@@ -454,8 +454,8 @@ section .title::after{
     margin-bottom: 10px;
     line-height: 1.4em;
     padding: 12px;
-    font-size: 19;
-    font-family: "Brush Script MT", cursive;
+    font-size: 19px;
+    font-family: "Comic Sans MS", cursive;
 }
 .container .box .content a
 {
@@ -779,7 +779,7 @@ section .title::after{
             }
             .label {
                 margin-top: 10px;
-                font-family: "Brush Script MT", cursive;
+                font-family: "Comic Sans MS", cursive;
             }
         }
     }
@@ -878,9 +878,9 @@ input,textarea
 .contact .contact-content .left p{
     text-align: justify;
     color: #373e4d;
-    font-size: 16;
+    font-size: 19px;
     font-style: italic;
-    font-family: "Brush Script MT", cursive;
+    font-family: "Comic Sans MS", cursive;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -905,7 +905,7 @@ input,textarea
     color: #333;
     font-size: 15;
     font-style: italic;
-    font-family: "Brush Script MT", cursive;
+    font-family: "Comic Sans MS", cursive;
 }
 .contact .right form .fields{
     display: flex;
