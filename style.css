@@ -13,7 +13,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+body {
+    position: relative;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -1243,10 +1245,10 @@ footer .wave#wave4
 
 @media (max-width: 500px) {
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 30px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 20px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -1269,5 +1271,10 @@ footer .wave#wave4
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    footer {
+        #media {
+           gap: 10px; 
+        }
     }
 }
