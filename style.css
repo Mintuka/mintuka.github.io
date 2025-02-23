@@ -297,7 +297,7 @@ section .title::after{
     text-align: justify;
     color: #373e4d;
     font-size: 16;
-    font-family: cursive;
+    font-family: "Brush Script MT", cursive;
 }
 .about .about-content .right a{
      display: inline-block;
@@ -455,7 +455,7 @@ section .title::after{
     line-height: 1.4em;
     padding: 12px;
     font-size: 19;
-    font-family: cursive;
+    font-family: "Brush Script MT", cursive;
 }
 .container .box .content a
 {
@@ -779,7 +779,7 @@ section .title::after{
             }
             .label {
                 margin-top: 10px;
-                font-family: cursive;
+                font-family: "Brush Script MT", cursive;
             }
         }
     }
@@ -880,7 +880,7 @@ input,textarea
     color: #373e4d;
     font-size: 16;
     font-style: italic;
-    font-family: cursive;
+    font-family: "Brush Script MT", cursive;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -905,7 +905,7 @@ input,textarea
     color: #333;
     font-size: 15;
     font-style: italic;
-    font-family: cursive;
+    font-family: "Brush Script MT", cursive;
 }
 .contact .right form .fields{
     display: flex;
