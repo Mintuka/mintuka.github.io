@@ -297,7 +297,7 @@ section .title::after{
     text-align: justify;
     color: #373e4d;
     font-size: 19px;
-    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
 }
 .about .about-content .right a{
      display: inline-block;
@@ -455,7 +455,7 @@ section .title::after{
     line-height: 1.4em;
     padding: 12px;
     font-size: 19px;
-    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
 }
 .container .box .content a
 {
@@ -779,7 +779,7 @@ section .title::after{
             }
             .label {
                 margin-top: 10px;
-                font-family: "Comic Sans MS", cursive;
+                font-style: italic;
             }
         }
     }
@@ -880,7 +880,6 @@ input,textarea
     color: #373e4d;
     font-size: 19px;
     font-style: italic;
-    font-family: "Comic Sans MS", cursive;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -905,7 +904,6 @@ input,textarea
     color: #333;
     font-size: 15;
     font-style: italic;
-    font-family: "Comic Sans MS", cursive;
 }
 .contact .right form .fields{
     display: flex;
@@ -1244,6 +1242,14 @@ footer .wave#wave4
 }
 
 @media (max-width: 500px) {
+    .home .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 400px;
+        margin-top: -50px;
+    }
     .home .home-content .text-2{
         font-size: 30px;
     }
