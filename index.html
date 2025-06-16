@@ -118,73 +118,73 @@
             <div class="skill-container">
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/React-icon.svg.png" alt="react">
+                        <img src="assets/skills/React-icon.svg.png" alt="react">
                     </div>
                     <div class="label">React</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/Angular_full_color_logo.svg.png" alt="angular">
+                        <img src="assets/skills/Angular_full_color_logo.svg.png" alt="angular">
                     </div>
                     <div class="label">Angular</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/express.png" alt="node">
+                        <img src="assets/skills/express.png" alt="node">
                     </div>
                     <div class="label">Node JS</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/typescript.jpg" alt="typescript">
+                        <img src="assets/skills/typescript.jpg" alt="typescript">
                     </div>
                     <div class="label">TypeScript</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/python.png" alt="python">
+                        <img src="assets/skills/python.png" alt="python">
                     </div>
                     <div class="label">Python</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/db.png" alt="db">
+                        <img src="assets/skills/db.png" alt="db">
                     </div>
                     <div class="label">Sql/NoSql</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/gcp.png" alt="gcp">
+                        <img src="assets/skills/gcp.png" alt="gcp">
                     </div>
                     <div class="label">Google Cloud</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/aws-icon.png" alt="aws">
+                        <img src="assets/skills/aws-icon.png" alt="aws">
                     </div>
                     <div class="label">AWS</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/ai.png" alt="ai">
+                        <img src="assets/skills/ai.png" alt="ai">
                     </div>
                     <div class="label">AI/ML/LLM</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/docker.png" alt="docker">
+                        <img src="assets/skills/docker.png" alt="docker">
                     </div>
                     <div class="label">Docker</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/kubernetes.png" alt="kubernetes">
+                        <img src="assets/skills/kubernetes.png" alt="kubernetes">
                     </div>
                     <div class="label">Kubernetes</div>
                 </div>
                 <div class="col">
                     <div class="img-container">
-                        <img src="assets/git.png" alt="git">
+                        <img src="assets/skills/git.png" alt="git">
                     </div>
                     <div class="label">Git</div>
                 </div>
@@ -258,29 +258,35 @@
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">My Projects</h2>
-            <div class="carousel owl-carousel">
+            <div class="card-container">
                 <div class="card">
                     <div class="box">
-                        <img src="/assets/MAESTRO.png" style="padding:10px" alt="img">
-                        <div class="text">MAESTRO</div>
-                        <p>Multi-Agent Educational System for Training and Online Learning</p>
-                        <a href="https://github.com/Mintuka/Retail-Insight-Generator" class="project" target="_blank">View Project</a>
+                        <img id="share" alt="img">
+                        <div class="text-container">
+                            <div class="text">Share - Connect Investors and Entrepreneurs</div>
+                            <div class="description">AI-powered application that provides intelligent responses to user queries by leveraging large language models</div>
+                        </div>
+                        <!-- <a href="https://github.com/Mintuka/vitok" class="project" target="_blank">View Project</a> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="/assets/QueryGPT.png" style="padding:10px" alt="img">
-                        <div class="text">QueryGPT</div>
-                        <p>AI Agent for SQL Query</p>
-                        <a href="https://apps.apple.com/app/id6499432865" class="project" target="_blank">View project</a>
+                        <img id="querygpt" alt="img">
+                        <div class="text-container">
+                            <div class="text">QueryGPT - AI Agent for SQL Query</div>
+                            <div class="description">AI-powered application that provides intelligent responses to user queries by leveraging large language models</div>
+                        </div>
+                        <!-- <a href="https://apps.apple.com/app/id6499432865" class="project" target="_blank">View project</a> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="/assets/Share.png" alt="img">
-                        <div class="text">Share</div>
-                        <p>Connect Investors and Entrepreneurs</p>
-                        <a href="https://github.com/Mintuka/vitok" class="project" target="_blank">View Project</a>
+                        <img id="maestro" alt="img">
+                        <div class="text-container">
+                            <div class="text">MAESTRO - Multi-Agent Educational System</div>
+                            <div class="description">AI-powered application that provides intelligent responses to user queries by leveraging large language models</div>
+                        </div>
+                        <!-- <a href="https://github.com/Mintuka/Retail-Insight-Generator" class="project" target="_blank">View Project</a> -->
                     </div>
                 </div>
                 <!-- <div class="card">
@@ -405,6 +411,24 @@
          loader.style.display = "none";
       })
   </script>
+  <script>
+    const projects = ['maestro', 'querygpt', 'share']
+    let currentIndex = 0;
 
+    function changeImage() {
+        console.log('current_idx', currentIndex)
+        currentIndex = (currentIndex) % 3;
+        for(let proj in projects) {
+            const imgElement = document.getElementById(projects[proj])
+            if (imgElement != null) {
+                imgElement.src = `/assets/projects/${projects[proj]}/${currentIndex}.png`;
+            }
+            console.log(imgElement, `/assets/projects/${projects[proj]}/${currentIndex}.png`)
+        }
+        currentIndex += 1
+    }
+    setInterval(changeImage, 2000);
+
+  </script>
 </body>
 </html>
